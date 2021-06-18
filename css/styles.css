@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #1f242b;
+  padding-bottom: 2rem;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 1rem;
+}
+
+h1 {
+  margin: 0;
+}
+
+.header {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+#survey-form {
+  max-width: 720px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1.5rem 1.25rem;
+  background: #ececec;
+  border-radius: 1.5rem;
+}
+
+#formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+label {
+  width: fit-content;
+  margin-bottom: .5rem;
+  font-weight: 700;
+}
+
+#survey-form p {
+  font-weight: 700;
+}
+
+input,
+select,
+option,
+textarea {
+  padding: .9375rem .5rem;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  border-radius: .75rem;
+  outline: none;
+  resize: none;
+}
+
+input[type="radio"] {
+  
+}
+
+button[type="submit"] {
+  padding: .9375rem .5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #ececec;
+  background: #147ac8;
+  border: none;
+  border-radius: .75rem;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  
+  #survey-form {
+    padding: 2.5rem 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}

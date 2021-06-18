@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Component</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <!--   Header start-->
+          <header class="header">
+            <h1 id="title">Formulario de encuesta</h1>
+            <p id="description">Gracias por ayudarnos a mejorar la plataforma</p>
+          </header>  
+        <!--   Form start -->
+          <form id="survey-form">
+            <div id="formGroup">
+              <label for="name" id="name-label">Nombre y apellido</label>
+              <input type="text" name="name" id="name" placeholder="Introduzca su nombre" required>
+             </div>
+            <div id="formGroup">
+              <label for="email" id="email-label">Correo Electrónico</label>
+              <input type="email" name="email" id="email" placeholder="Introduzca su email" required>
+             </div>
+            <div id="formGroup">
+              <label for="age" id="number-label">Edad</label>
+              <input type="number" name="age" id="number" placeholder="Edad" min="18" max="99" required>
+            </div>
+            <div id="formGroup">
+              <p>¿Qué opción describe mejor su función actual?</p>
+              <select name="función" id="dropdown">
+                <option disabled selected>Seleccionar la función actual</option>
+                <option value="estudiante">Estudiante</option>
+                <option value="trabajo">Trabajo tiempo completo</option>
+                <option value="alumno">Alumno tiempo completo</option>
+                <option value="indeterminado">Prefiero no decirlo</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+            <div id="formGroup">
+              <p>¿Recomendarías nuestra plataforma a un amigo?</p>
+              <label>
+                <input name="recomendacion" type="radio" value="definitivamente">
+                Definitivamente
+              </label>
+              <label>
+                <input name="recomendacion" type="radio" value="quizas">
+                Quizás
+              </label>
+              <label>
+                <input name="recomendacion" type="radio" value="inseguro">
+                No estoy seguro
+              </label>
+            </div>
+            <div id="formGroup">
+              <p>¿Qué le gustaría que se mejorara? (Marque todo lo que corresponda)</p>
+              <label>  
+                <input type="checkbox" value="proyectosFront">
+                Proyectos Front-end
+              </label>
+              <label>
+                <input type="checkbox" value="proyectosBack">
+                Proyectos Back-end
+              </label>
+              <label>
+                <input type="checkbox" value="retos">
+                Retos
+              </label>
+              <label>
+                <input type="checkbox" value="videos">
+                Vídeos
+              </label>
+            </div>
+            <div id="formGroup">
+              <p>¿Algún comentario o sugerencia?</p>
+              <textarea id="comment" name="comentarios" placeholder="Introduzca su comentario aquí..."></textarea>
+            </div>
+            <div id="formGroup">
+              <button type="submit" id="submit">Enviar</button>
+            </div>
+          </form>
+        </div>
+</body>
+</html>
